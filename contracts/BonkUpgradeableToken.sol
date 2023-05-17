@@ -12,7 +12,7 @@ contract BONKTokenV2 is Initializable, UUPSUpgradeable, ERC20Upgradeable, ERC20B
     mapping(address => bool) whitelistedAddresses;
 
     function initialize() public initializer {
-        __ERC20_init("BONKTokenV1", "BONK");
+        __ERC20_init("BONKToken", "BONK");
         __ERC20Burnable_init();
         __Pausable_init();
         __Ownable_init();

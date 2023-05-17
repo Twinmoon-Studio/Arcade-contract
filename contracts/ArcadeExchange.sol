@@ -164,4 +164,10 @@ contract ArcadeExchange is Initializable, UUPSUpgradeable, OwnableUpgradeable {
         }
         return false;
     }
+
+    function estimateFees(uint256 _amount) external view returns (uint256, uint256) {
+        uint256 serviceCharge = _amount * interestRate / 10_000;
+        uint256 totalAmount = _amount - serviceCharge;
+        return (totalAmount, serviceCharge);
+    }
 }
