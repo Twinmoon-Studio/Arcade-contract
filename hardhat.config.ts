@@ -6,6 +6,7 @@ import { config as dotEnvConfig } from "dotenv";
 dotEnvConfig();
 
 const mnemonicCode = process.env.MNEMONIC ?? "NO_CODE";
+const privateKey1 = process.env.ACCOUNT_1_PK ?? "";
 // const bscscanKey = "ZD8K7QVDY32C6T9EVKV5XCKPQXVZG8JM6Q";
 const bscscanKey = process.env.BSCSCAN_KEY ?? "";
 
@@ -23,9 +24,11 @@ const config: HardhatUserConfig = {
     },
     bsc: {
       url: "https://bsc-dataseed.binance.org/",
-      accounts: {
-        mnemonic: mnemonicCode,
-      },
+      // accounts: {
+      //   mnemonic: mnemonicCode,
+      //   privateKey: privateKey1,
+      // },
+      accounts: [privateKey1],
       chainId: 56,
       blockGasLimit: 8e9,
       gasPrice: 20e9,

@@ -7,7 +7,8 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 
-contract BONKTokenV2 is Initializable, UUPSUpgradeable, ERC20Upgradeable, ERC20BurnableUpgradeable, PausableUpgradeable, OwnableUpgradeable {
+// contract BONKToken is Initializable, UUPSUpgradeable, ERC20Upgradeable, ERC20BurnableUpgradeable, PausableUpgradeable, OwnableUpgradeable {
+contract BONKToken is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, PausableUpgradeable, OwnableUpgradeable {
 
     mapping(address => bool) whitelistedAddresses;
 
@@ -17,8 +18,6 @@ contract BONKTokenV2 is Initializable, UUPSUpgradeable, ERC20Upgradeable, ERC20B
         __Pausable_init();
         __Ownable_init();
     }
-
-    function _authorizeUpgrade(address) internal override onlyOwner {}
 
     function pause() public onlyOwner {
         _pause();

@@ -3,8 +3,8 @@ import { ethers, upgrades } from "hardhat";
 async function main() {
   const ArcadeExchange = await ethers.getContractFactory("ArcadeExchange");
   const exchangeParameter = [
-    "0xFF4D502Eaec6828a92159A4E55dc686dEA3bDaDa",
-    "0x0000000000000000000000000000000000000000",
+    "0x2399b02E5F2c6517c79ece1243784598f4CAA3FB",
+    "0x12bCe0f924De114dAcC885fB47372680C90c606B",
     2,
     1000,
     100,
