@@ -1,12 +1,12 @@
 import { ethers, upgrades } from "hardhat";
 
 async function main() {
-  const ArcadeVault = await ethers.getContractFactory("ArcadeVaultV2");
+  const ArcadeVault = await ethers.getContractFactory("ArcadeVaultV3");
   const vaultParameter = [
-    "0xFF4D502Eaec6828a92159A4E55dc686dEA3bDaDa",
-    "0x4dECBfe9eb0cCBBBF7b56F3E2b79C7cAD3C264a5",
-    "0x85096BBfC0A45710b0241fC62dd07f9c9004bdC6",
-    "0xeD145dd74ED7493FC8756355dE84C0Daf795a8ED",
+    "0x810460c565c52c368500Ca527728868200495210",
+    "0x656BceFc84d4C694D2193811fc34F49e020481Be",
+    "0xBe755Ac37FB7a2eaF67B95F1d7Bc8A9cF08dAE98",
+    "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
     0,
     0,
     0,

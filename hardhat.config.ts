@@ -15,11 +15,11 @@ const config: HardhatUserConfig = {
   etherscan: { apiKey: bscscanKey },
   networks: {
     tsc: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      url: "https://data-seed-prebsc-2-s2.bnbchain.org:8545",
       chainId: 97,
-      blockGasLimit: 8e9,
-      gasPrice: 20e9,
-      gas: 25e6,
+      blockGasLimit: 80e9,
+      gasPrice: 80e9,
+      gas: 80e6,
       accounts: { mnemonic: mnemonicCode },
     },
     bsc: {

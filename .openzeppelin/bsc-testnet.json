@@ -79,6 +79,46 @@
       "address": "0x3ab7c03aAB1f5D2C8e25d308B1C4195d95680Ce8",
       "txHash": "0x0c452722da6f40f3ba27b7b323e8e6627f222965ac6b3b6895bba61c0ed830be",
       "kind": "uups"
+    },
+    {
+      "address": "0xF8A0a98cE28AD5DfF02ED318089136307bCAE2Ee",
+      "txHash": "0x9056b81d5c0a8a8a57d62f0e0de17b4bd4acf8c19768142620bd727b43e85b40",
+      "kind": "uups"
+    },
+    {
+      "address": "0x12c7CdAc541AB760A0351b179716c56d50e45879",
+      "txHash": "0x2e43113080b10752cf3c4c41c16de449896f5d06b4c19bccd82c1234802f2f04",
+      "kind": "uups"
+    },
+    {
+      "address": "0xBF1352d52C43a295699e1AD5Eed7b4DA13A1757e",
+      "txHash": "0x6ffce579657ab1bc4bdad345bf9d9b6ec82ddb16e48f1a20aa5759da0ed2e16c",
+      "kind": "uups"
+    },
+    {
+      "address": "0x75c4f8ca7e81473bE93b0708526b41D20cD1c03a",
+      "txHash": "0xab736aada4733c0716c5eb6f481f5f95e3657e2a12fb54534ae9ac9d14ed564d",
+      "kind": "uups"
+    },
+    {
+      "address": "0x656BceFc84d4C694D2193811fc34F49e020481Be",
+      "txHash": "0x175dfe41e79dac5cc603b87e3e3b03508314836f931a255e04a2ccff557ee056",
+      "kind": "uups"
+    },
+    {
+      "address": "0x458F49135c8f169F3142D32112182deD6a8671B9",
+      "txHash": "0xf09a603d977b5dcde7e004d153f04ef5f6e89e2a221fd36f8c34325d5fe9837b",
+      "kind": "uups"
+    },
+    {
+      "address": "0xca63DeaB02DE0fBD19daEB3C8D55e26fFbA4AB2D",
+      "txHash": "0x4ca9b2335baa022ec065545d5ce9cc143304fb4a913dce008d85f061d3c12640",
+      "kind": "uups"
+    },
+    {
+      "address": "0x93C76E91224A3CC8114F6d91EB55f6dA1a674543",
+      "txHash": "0xc67f61ae19a5bac4b9837faaeac938b71207b3f89416adb3551fe8ce4f622809",
+      "kind": "uups"
     }
   ],
   "impls": {
@@ -2324,6 +2364,754 @@
           "t_contract(IERC20)1296": {
             "label": "contract IERC20",
             "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e4dfa0b4fe37115cc9adad7e13e0f3e987d56cf7bc19683a045fe6a7cec66a48": {
+      "address": "0xfC491511572bE2F23f9bbfbeC8f2a49ca127A185",
+      "txHash": "0xf82d91e82ab1ff6e8b0d3430f0496810b633569bf3a126ca488760109c77962d",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:197"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "manager",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_address_payable",
+            "contract": "ArcadeManagerV3",
+            "src": "contracts/ArcadeManagerV3.sol:10"
+          },
+          {
+            "label": "vault",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(ArcadeVaultV3)3987",
+            "contract": "ArcadeManagerV3",
+            "src": "contracts/ArcadeManagerV3.sol:11"
+          },
+          {
+            "label": "shares",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_uint32)",
+            "contract": "ArcadeManagerV3",
+            "src": "contracts/ArcadeManagerV3.sol:12"
+          },
+          {
+            "label": "holders",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "ArcadeManagerV3",
+            "src": "contracts/ArcadeManagerV3.sol:13"
+          },
+          {
+            "label": "length",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_uint256",
+            "contract": "ArcadeManagerV3",
+            "src": "contracts/ArcadeManagerV3.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ArcadeVaultV3)3987": {
+            "label": "contract ArcadeVaultV3",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint32)": {
+            "label": "mapping(address => uint32)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bc23ad42146fae8caa01df1bfbb8c3a27851d3a718cf22ac8b7b016cf631373c": {
+      "address": "0x311983D824AC717911f28f75C2aF9762f4DBF18b",
+      "txHash": "0xa281c70fb20f24f0a6125422e1ff019869abc7a50c1ef090a220fe96ef420c59",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:197"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "vault",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(ArcadeVaultV3)4893",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:10"
+          },
+          {
+            "label": "manager",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(ArcadeManagerV3)4058",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:11"
+          },
+          {
+            "label": "bonkPrice",
+            "offset": 20,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:12"
+          },
+          {
+            "label": "bamPrice",
+            "offset": 22,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:13"
+          },
+          {
+            "label": "interestRate",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ArcadeManagerV3)4058": {
+            "label": "contract ArcadeManagerV3",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ArcadeVaultV3)4893": {
+            "label": "contract ArcadeVaultV3",
+            "numberOfBytes": "20"
+          },
+          "t_uint16": {
+            "label": "uint16",
+            "numberOfBytes": "2"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bd34e390c367ac83acdddce0b685a304a4891f0b0f87f7a90f584d0b4f53b5f9": {
+      "address": "0x4220a8711cDf3b9a06104842b1990583D316E035",
+      "txHash": "0x69951581efd69188a35c40f2ce0b54780327d786207b1bc594ec4b9d34e41a2f",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:197"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "bonkToken",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(IERC20)1296",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:13"
+          },
+          {
+            "label": "stableToken",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(IERC20)1296",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:14"
+          },
+          {
+            "label": "bonkSupply",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:15"
+          },
+          {
+            "label": "stableSupply",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_uint256",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:16"
+          },
+          {
+            "label": "bonkReserve",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_uint256",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:17"
+          },
+          {
+            "label": "stableReserve",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_uint256",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:18"
+          },
+          {
+            "label": "manager",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_contract(ArcadeManagerV3)3152",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:21"
+          },
+          {
+            "label": "exchangeCenter",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_address",
+            "contract": "ArcadeVaultV3",
+            "src": "contracts/ArcadeVaultV3.sol:22"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ArcadeManagerV3)3152": {
+            "label": "contract ArcadeManagerV3",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)1296": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "3c6cefee5c806384e42b600b00c5bf843cb19a0c98f8a78002a708320f562793": {
+      "address": "0x0480DcA301B88852987385295378F29e5CAe80fA",
+      "txHash": "0x78e75b5008809336a2d74da67b260108b31dc50e8c087b2e3b11e22de038aa9d",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:197"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "vault",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(ArcadeVaultV3)4004",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:10"
+          },
+          {
+            "label": "manager",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(ArcadeManagerV3)3169",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:11"
+          },
+          {
+            "label": "bonkPrice",
+            "offset": 20,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:12"
+          },
+          {
+            "label": "bamPrice",
+            "offset": 22,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:13"
+          },
+          {
+            "label": "interestRate",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ArcadeManagerV3)3169": {
+            "label": "contract ArcadeManagerV3",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ArcadeVaultV3)4004": {
+            "label": "contract ArcadeVaultV3",
+            "numberOfBytes": "20"
+          },
+          "t_uint16": {
+            "label": "uint16",
+            "numberOfBytes": "2"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "adb904e003599a6411f944288af17c2f1135a13d9f665a27d53c8556eb9dd226": {
+      "address": "0xf4D650Ed4A51e3dDb47f2c6F5c67DCe617C8961b",
+      "txHash": "0x7de10931a3c48e993a0ddb8c649306106b5b302fedd7a7759629b05f091fa6b8",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:197"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "vault",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_contract(ArcadeVaultV3)4025",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:10"
+          },
+          {
+            "label": "manager",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_contract(ArcadeManagerV3)3190",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:11"
+          },
+          {
+            "label": "bonkPrice",
+            "offset": 20,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:12"
+          },
+          {
+            "label": "bamPrice",
+            "offset": 22,
+            "slot": "202",
+            "type": "t_uint16",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:13"
+          },
+          {
+            "label": "interestRate",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "ArcadeExchange",
+            "src": "contracts/ArcadeExchangeV3.sol:14"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(ArcadeManagerV3)3190": {
+            "label": "contract ArcadeManagerV3",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ArcadeVaultV3)4025": {
+            "label": "contract ArcadeVaultV3",
+            "numberOfBytes": "20"
+          },
+          "t_uint16": {
+            "label": "uint16",
+            "numberOfBytes": "2"
           },
           "t_uint256": {
             "label": "uint256",

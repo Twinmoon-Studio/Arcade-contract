@@ -4,9 +4,9 @@ async function main() {
   const accounts = await ethers.provider.listAccounts();
   console.log("Accounts[0]:", accounts[0]);
 
-  const ArcadeManager = await ethers.getContractFactory("ArcadeManager");
-  const managerParameter = ["0x2A88e5E5Cf0DD6Be32d8FC66c85aF4ee65553D8D"];
-  const arcadeManagerAdmin = await upgrades.deployProxyAdmin();
+  const ArcadeManager = await ethers.getContractFactory("ArcadeManagerV3");
+  const managerParameter = ["0xa28Cf61504d3F5656B193C73902F012c8C608b6c","0xD76e263c8F23855d178EE7457176D8389fC1fE58"];
+  // const arcadeManagerAdmin = await upgrades.deployProxyAdmin();
   const arcadeManager = await upgrades.deployProxy(
     ArcadeManager,
     managerParameter

@@ -2,8 +2,8 @@ import { ethers, upgrades } from "hardhat";
 
 async function main() {
   // const ArcadeManager = await ethers.getContractFactory("ArcadeManager"); //
-  const ArcadeVault = await ethers.getContractFactory("ArcadeVault");
-  const ArcadeExchange = await ethers.getContractFactory("ArcadeExchange");
+  const ArcadeVault = await ethers.getContractFactory("ArcadeVaultV3");
+  const ArcadeExchange = await ethers.getContractFactory("ArcadeExchangeV3");
 
   // const managerParameter = ["0x2A88e5E5Cf0DD6Be32d8FC66c85aF4ee65553D8D"];
 
