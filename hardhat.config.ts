@@ -6,7 +6,6 @@ import { config as dotEnvConfig } from "dotenv";
 dotEnvConfig();
 
 const mnemonicCode = process.env.MNEMONIC ?? "NO_CODE";
-// const bscscanKey = "ZD8K7QVDY32C6T9EVKV5XCKPQXVZG8JM6Q";
 const bscscanKey = process.env.BSCSCAN_KEY ?? "";
 
 const config: HardhatUserConfig = {
